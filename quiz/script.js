@@ -1,6 +1,6 @@
 const questions = [
     {
-        pict: "/assets/turmeric.png",
+        pict: "questions/turmeric.png",
         question: "Bumbu dapur apa yang dikenal memiliki warna kuning dan sering digunakan dalam masakan kari?",
         answers: [
             { text: "Jahe", correct: false },
@@ -11,7 +11,7 @@ const questions = [
         xp: 100
     },
     {
-        pict: "/assets/black_pepper.png",
+        pict: "questions/black_pepper.png",
         question: "Rempah apa yang sering digunakan untuk memberikan aroma khas pada makanan dan minuman, serta dikenal sebagai 'king of spices'?",
         answers: [
             { text: "Cengkeh", correct: false },
@@ -22,7 +22,7 @@ const questions = [
         xp: 20
     },
     {
-        pict: "/assets/cinnamon.png",
+        pict: "questions/cinnamon.png",
         question: "Rempah apa yang sering digunakan dalam bentuk batang dan bubuk, terkenal dengan aroma manis dan hangatnya?",
         answers: [
             { text: "Cengkeh", correct: false },
@@ -33,7 +33,7 @@ const questions = [
         xp: 100
     },
     {
-        pict: "/assets/paprika.png",
+        pict: "questions/paprika.png",
         question: "Bumbu apa yang sering digunakan dalam masakan Italia untuk memberikan rasa pedas dan aromatik?",
         answers: [
             { text: "Oregano", correct: false },
@@ -44,7 +44,7 @@ const questions = [
         xp: 200
     },
     {
-        pict: "/assets/ginger.png",
+        pict: "questions/ginger.png",
         question: "Bumbu dapur apa yang sering digunakan dalam masakan Asia dan dikenal dapat membantu mengatasi mual?",
         answers: [
             { text: "Jahe", correct: true },
@@ -55,7 +55,7 @@ const questions = [
         xp: 100
     },
     {
-        pict: "/assets/black_pepper.png",
+        pict: "questions/black_pepper.png",
         question: "Rempah apa yang sering digunakan dalam bentuk biji atau bubuk untuk memberikan rasa pedas dan hangat dalam masakan?",
         answers: [
             { text: "Lada", correct: true },
@@ -77,7 +77,7 @@ const questions = [
         xp: 20
     },
     {
-        pict: "/assets/bay_leaf.png",
+        pict: "questions/bay_leaf.png",
         question: "Bumbu dapur apa yang sering digunakan dalam bentuk daun dan memberikan aroma khas pada masakan Asia Tenggara?",
         answers: [
             { text: "Daun Salam", correct: true },
@@ -99,7 +99,7 @@ const questions = [
         xp: 200
     },
     {
-        pict: "/assets/cumin.png",
+        pict: "questions/cumin.png",
         question: "Rempah apa yang sering digunakan dalam bentuk bubuk dan biji, serta dikenal dengan rasa pahit dan sedikit pedas?",
         answers: [
             { text: "Jinten", correct: true },
