@@ -394,3 +394,125 @@ footer{
     height: fit-content;
     width: 30px;
 }
+
+.floating-navbar{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: auto;
+    top: 92%;
+    background-color: white;
+    border-top: 3px solid var(--coin);
+    bottom: 0;
+    
+}
+
+@media (max-width: 1240px) {
+    .floating-navbar{
+        display: flex;
+    }
+
+    header.navbar {
+        display: none;
+    }
+
+    aside{
+        margin-left: 710px;
+    }
+
+    .upper{
+        align-items: center;
+    }
+    ul{
+        display: flex;
+        margin: 0;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 8px;
+    }
+
+    .logo{
+        margin-right: 200px;
+    }
+
+    nav ul li h3{
+        display: none;
+    }
+
+    nav ul li img{
+        width: 40px;
+    }
+
+    ul{
+        gap: 40px;
+    }
+
+    nav{
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 1240px) {
+    header.navbar {
+        display: none;
+    }
+
+    aside{
+        display: none;
+    }
+
+    .main{
+        margin: 0;
+    }
+
+    .main footer{
+        height: 70px;
+    }
+
+    .quiz{
+        margin: 14px;
+        width: 100%;
+    }
+
+    .upper{
+        align-items: center;
+    }
+    ul{
+        display: flex;
+        margin: 0;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 8px;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    nav ul li h3{
+        display: none;
+    }
+
+    ul{
+        gap: 40px;
+    }
+
+    nav ul li img{
+        width: 40px;
+    }
+
+    nav{
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+
+}

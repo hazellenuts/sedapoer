@@ -10,6 +10,48 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <header class="floating-navbar">
+        <div class="logo">
+            <img src="assets/logomangkuk.png" alt="logo">
+            <h1 class="textlogo">sedapoer</h1>
+        </div>
+        <nav>
+            <ul>
+                <a href="">
+                    <li class="index">
+                        <img src="assets/quests.png" alt="quests" width="34px">
+                        <h3>QUESTS</h3>
+                    </li>
+                </a>
+                
+                <a href="">
+                    <li>
+                        <img src="assets/achievements.png" alt="quests" width="34px">
+                        <h3>ACHIEVEMENTS</h3>
+                    </li>
+                </a>
+
+                <a href="">
+                    <li>
+                        <img src="assets/class.png" alt="quests" width="34px">
+                        <h3>CLASS</h3>
+                    </li>
+                </a>
+                
+                <a href="">
+                    <li>
+                        <img src="assets/recipes.png" alt="quests" width=34px">
+                        <h3>RECIPES</h3>
+                    </li>
+                </a>
+
+                <div class="user">
+                    <img src="assets/profile.png" alt="profile" >
+                </div>
+                
+            </ul>
+        </nav>
+    </header>
     <header class="navbar">
         <div class="upper">
             <div class="logo">
@@ -75,113 +117,172 @@
         </header>
         <section class="main">
             <section class="quiz">
-                <div class="unit 1">
+                <!-- Unit 1 -->
+                <div class="unit">
                     <div class="headerunit">
                         <div class="title">
                             <h1>Unit 1</h1>
                             <h5>Pelajari peralatan masak</h5>
                         </div>
                         <button class="bacaan">
-                            <img src="assets/bacaan.png" alt="bacaan" width="28px">
+                            <img src="assets/bacaan.png" alt="Icon bacaan" width="28px">
                         </button>
                     </div>
                     <div class="level">
                         <div class="lvl satutiga">
-                            <a href=""><img src="assets/milestone-finished.png" alt="finished""></a>
-                            <a href=""><img src="assets/milestone-finished.png" alt="finished""></a>
-                            <a href=""><img src="assets/milestone-finalished.png" alt="finished""></a>
+                            <a href="#" onclick="handleImageClick('assets/milestone-finished.png')">
+                                <img src="assets/milestone-finished.png" alt="Unit 1 - Finished" >
+                            </a>
+                            <a href="#" onclick="handleImageClick('assets/milestone-finished.png')">
+                                <img src="assets/milestone-finished.png" alt="Unit 1 - Finished" >
+                            </a>
+                            <a href="#" onclick="handleImageClick('assets/milestone-finalished.png')">
+                                <img src="assets/milestone-finalished.png" alt="Unit 1 - Finalished" >
+                            </a>
                         </div>
                         <div class="lvl empatlima">
-                            <a href=""><img src="assets/milestone-finished.png" alt="finished""></a>
-                            <a href=""><img src="assets/milestone-finished.png" alt="finished""></a>
+                            <a href="#" onclick="handleImageClick('assets/milestone-finished.png')">
+                                <img src="assets/milestone-finished.png" alt="Unit 1 - Finished" >
+                            </a>
+                            <a href="#" onclick="handleImageClick('assets/milestone-finished.png')">
+                                <img src="assets/milestone-finished.png" alt="Unit 1 - Finished" >
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="unit 2">
+
+                <!-- Unit 2 -->
+                <div class="unit">
                     <div class="headerunit">
                         <div class="title">
                             <h1>Unit 2</h1>
                             <h5>Pelajari jenis-jenis bumbu dan rempah dapur</h5>
                         </div>
                         <button class="bacaan">
-                            <img src="assets/bacaan.png" alt="bacaan" width="28px">
+                            <img src="assets/bacaan.png" alt="Icon bacaan" width="28px">
                         </button>
                     </div>
                     <div class="level">
                         <div class="lvl satutiga">
-                            <a href=""><img src="assets/milestone-finished.png" alt="finished" ></a>
-                            <a href=""><img src="assets/milestone-star.png" alt="finished" ></a>
-                            <a href=""><img src="assets/milestone-final.png" alt="finished" ></a>
+                            <a href="#" onclick="handleImageClick('assets/milestone-finished.png')">
+                                <img src="assets/milestone-finished.png" alt="Unit 2 - Finished">
+                            </a>
+                            <a href="#" onclick="handleImageClick('assets/milestone-star.png')">
+                                <img src="assets/milestone-star.png" alt="Unit 2 - Locked">
+                            </a>
+                            <a href="#" onclick="handleImageClick('assets/milestone-final.png')">
+                                <img src="assets/milestone-final.png" alt="Unit 2 - Final">
+                            </a>
                         </div>
                         <div class="lvl empatlima">
-                            <a href=""><img src="assets/milestone-onstar.png" alt="finished" ></a>
-                            <a href=""><img src="assets/milestone-star.png" alt="finished" ></a>
+                            <a href="#" onclick="handleImageClick('assets/milestone-onstar.png')">
+                                <img src="assets/milestone-onstar.png" alt="Unit 2 - Ongoing">
+                            </a>
+                            <a href="#" onclick="handleImageClick('assets/milestone-star.png')">
+                                <img src="assets/milestone-star.png" alt="Unit 2 - Locked">
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="unit 3">
+
+                <!-- Unit 3 -->
+                <div class="unit">
                     <div class="headerunit">
                         <div class="title">
                             <h1>Unit 3</h1>
                             <h5>Pelajari teknik-teknik dalam memasak</h5>
                         </div>
                         <button class="bacaan">
-                            <img src="assets/bacaan.png" alt="bacaan" width="28px">
+                            <img src="assets/bacaan.png" alt="Icon bacaan" width="28px">
                         </button>
                     </div>
                     <div class="level">
                         <div class="lvl satutiga">
-                            <a href=""><img src="assets/milestone-star.png" alt="finished"></a>
-                            <a href=""><img src="assets/milestone-star.png" alt="finished"></a>
-                            <a href=""><img src="assets/milestone-final.png" alt="finished"></a>
+                            <a href="#" onclick="handleImageClick('assets/milestone-star.png')">
+                                <img src="assets/milestone-star.png" alt="Unit 3 - Locked">
+                            </a>
+                            <a href="#" onclick="handleImageClick('assets/milestone-star.png')">
+                                <img src="assets/milestone-star.png" alt="Unit 3 - Locked">
+                            </a>
+                            <a href="#" onclick="handleImageClick('assets/milestone-final.png')">
+                                <img src="assets/milestone-final.png" alt="Unit 3 - Final">
+                            </a>
                         </div>
                         <div class="lvl empatlima">
-                            <a href=""><img src="assets/milestone-star.png" alt="finished" width="110px"></a>
-                            <a href=""><img src="assets/milestone-star.png" alt="finished""></a>
+                            <a href="#" onclick="handleImageClick('assets/milestone-star.png')">
+                                <img src="assets/milestone-star.png" alt="Unit 3 - Locked">
+                            </a>
+                            <a href="#" onclick="handleImageClick('assets/milestone-star.png')">
+                                <img src="assets/milestone-star.png" alt="Unit 3 - Locked">
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="unit 3">
+
+                <!-- Unit 4 -->
+                <div class="unit">
                     <div class="headerunit">
                         <div class="title">
                             <h1>Unit 4</h1>
                             <h5>Pelajari baking</h5>
                         </div>
                         <button class="bacaan">
-                            <img src="assets/bacaan.png" alt="bacaan" width="28px">
+                            <img src="assets/bacaan.png" alt="Icon bacaan" width="28px">
                         </button>
                     </div>
                     <div class="level">
                         <div class="lvl satutiga">
-                            <a href=""><img src="assets/milestone-star.png" alt="finished"></a>
-                            <a href=""><img src="assets/milestone-star.png" alt="finished"></a>
-                            <a href=""><img src="assets/milestone-final.png" alt="finished"></a>
+                            <a href="#" onclick="handleImageClick('assets/milestone-star.png')">
+                                <img src="assets/milestone-star.png" alt="Unit 4 - Locked">
+                            </a>
+                            <a href="#" onclick="handleImageClick('assets/milestone-star.png')">
+                                <img src="assets/milestone-star.png" alt="Unit 4 - Locked">
+                            </a>
+                            <a href="#" onclick="handleImageClick('assets/milestone-final.png')">
+                                <img src="assets/milestone-final.png" alt="Unit 4 - Final">
+                            </a>
                         </div>
                         <div class="lvl empatlima">
-                            <a href=""><img src="assets/milestone-star.png" alt="finished" width="110px"></a>
-                            <a href=""><img src="assets/milestone-star.png" alt="finished""></a>
+                            <a href="#" onclick="handleImageClick('assets/milestone-star.png')">
+                                <img src="assets/milestone-star.png" alt="Unit 4 - Locked">
+                            </a>
+                            <a href="#" onclick="handleImageClick('assets/milestone-star.png')">
+                                <img src="assets/milestone-star.png" alt="Unit 4 - Locked">
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="unit 3">
+
+                <!-- Unit 5 -->
+                <div class="unit">
                     <div class="headerunit">
                         <div class="title">
                             <h1>Unit 5</h1>
                             <h5>Pelajari hidangan lokal dan mancanegara</h5>
                         </div>
                         <button class="bacaan">
-                            <img src="assets/bacaan.png" alt="bacaan" width="28px">
+                            <img src="assets/bacaan.png" alt="Icon bacaan" width="28px">
                         </button>
                     </div>
                     <div class="level">
                         <div class="lvl satutiga">
-                            <a href=""><img src="assets/milestone-star.png" alt="finished"></a>
-                            <a href=""><img src="assets/milestone-star.png" alt="finished"></a>
-                            <a href=""><img src="assets/milestone-final.png" alt="finished"></a>
+                            <a href="#" onclick="handleImageClick('assets/milestone-star.png')">
+                                <img src="assets/milestone-star.png" alt="Unit 5 - Locked">
+                            </a>
+                            <a href="#" onclick="handleImageClick('assets/milestone-star.png')">
+                                <img src="assets/milestone-star.png" alt="Unit 5 - Locked">
+                            </a>
+                            <a href="#" onclick="handleImageClick('assets/milestone-final.png')">
+                                <img src="assets/milestone-final.png" alt="Unit 5 - Final">
+                            </a>
                         </div>
                         <div class="lvl empatlima">
-                            <a href=""><img src="assets/milestone-star.png" alt="finished" width="110px"></a>
-                            <a href=""><img src="assets/milestone-star.png" alt="finished""></a>
+                            <a href="#" onclick="handleImageClick('assets/milestone-star.png')">
+                                <img src="assets/milestone-star.png" alt="Unit 5 - Locked">
+                            </a>
+                            <a href="#" onclick="handleImageClick('assets/milestone-star.png')">
+                                <img src="assets/milestone-star.png" alt="Unit 5 - Locked">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -276,8 +377,8 @@
                         <div class="badgesfooter">
                             <div class="embla__counter"></div>
                             <section>
-                                <button class="embla__button embla__button--next"><i class="fa-solid fa-circle-chevron-left"></i></button>
-                                <button class="embla__button embla__button--prev"><i class="fa-solid fa-circle-chevron-right"></i></button>
+                                <button class="embla__button embla__button--prev"><i class="fa-solid fa-circle-chevron-left"></i></button>
+                                <button class="embla__button embla__button--next"><i class="fa-solid fa-circle-chevron-right"></i></button>
                             </section>
                             
                         </div>
