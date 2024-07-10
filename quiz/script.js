@@ -239,12 +239,12 @@ checkButton.addEventListener('click', () => {
 });
 
 closeModal.onclick = function() {
-    window.location.href = '/sedapoer/quests.html';
+    window.location.href = 'hazellenuts.github.io/sedapoer/quests.html';
 }
 
 window.onclick = function(event) {
     if (event.target == modal) {
-        window.location.href = '/sedapoer/quests.html';
+        window.location.href = 'hazellenuts.github.io/sedapoer/quests.html';
     }
 }
 
