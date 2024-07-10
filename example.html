@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Column Layout with Navbar and Fixed Side Panels</title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .side-panel {
+            width: 200px;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .navbar {
+            background-color: #343a40;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .content-wrapper {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+        .scrollable-content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            background-color: #e9ecef;
+        }
+        .right-panel {
+            width: 200px;
+            background-color: #f8f9fa;
+            padding: 20px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <aside class="side-panel">
+        Side panel content here. This area is fixed to the screen.
+    </aside>
+    <div class="main-content">
+        <header class="navbar">
+            Navbar content here. This area is fixed to the screen.
+        </header>
+        <div class="content-wrapper">
+            <section class="scrollable-content">
+                Main scrollable content here. Add more content to see the scrolling effect.
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Vestibulum eget vehicula nisi.</p>
+                <p>Suspendisse potenti.</p>
+                <p>Praesent in tellus et arcu faucibus porttitor.</p>
+                <p>Proin hendrerit nisl nec lorem cursus, nec posuere augue consequat.</p>
+                <p>Etiam vitae nulla non lectus scelerisque laoreet.</p>
+            </section>
+            <aside class="right-panel">
+                Right side content here. This area is fixed to the screen.
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Vestibulum eget vehicula nisi.</p>
+            </aside>
+        </div>
+    </div>
+</body>
+</html>

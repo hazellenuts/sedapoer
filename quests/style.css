@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{
+    --crepe: #FAE1DF;
+    --salmon: #F9A38A;
+    --honey: #FFB63A;
+    --redpanda: #FF5443;
+    --charcoal: #3F4047;
+    --pollen: #FFEDCE;
+    --coin: #e7e7e7;
+    --ash: #ffeded6f;
+    --vanishedcrepe: #fae1df47;
+    --gunpowder: #3f40476b;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+}
+
+h3{
+    font-size: 14px;
+    color: var(--charcoal);
+}
+
+h2{
+    font-size: 18px;
+    color: var(--charcoal);
+}
+
+h1{
+    font-size: 22px;
+    font-weight: 800;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+main{
+    width: 100%;
+}
+
+.navbar{
+    background-color: #ffffff;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 12.2%;
+    border-right: 3px solid var(--coin);
+}
+
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.upper{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.logo, li, .user{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 10px;
+}
+
+.user img{
+    width: 32px;
+}
+
+.logo img{
+    width: 32px;
+}
+
+.textlogo{
+    color: var(--redpanda);
+    font-weight: 900;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    padding: 22px;
+    align-items: center;
+    background: #ffffff;
+    justify-content: space-between;
+    border-bottom: 3px solid var(--coin);
+}
+
+.tracker li{
+    padding: 0;
+}
+
+.tracker{
+    display: flex;
+    gap: 70px;
+}
+
+li{
+    height: 20px;
+}
+
+.index{
+    background-color: var(--crepe) !important;
+    border-radius: 10px;
+}
+
+.right-panel{
+    border: 3px solid var(--coin);
+    padding: 16px;
+    margin: 10px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    width: 320px;
+}
+
+.right-panel.quests{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main{
+    background-color: var(--ash);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.quiz{
+    margin: 10px;
+    margin-left: 8%;
+    width: 55%;
+    display: block;
+    justify-content: baseline;
+    align-items: center;
+}
+
+aside{
+    position: fixed;
+    margin-left: 54%;
+}
+
+.lvl img{
+    width: 90px;
+}
+
+.headerunit{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--redpanda);
+    border-radius: 16px 16px 0 0;
+    color: #ffffff;
+}
+
+.unit{
+    margin-bottom:20px;
+    background-color: #ffffff;
+    border-radius: 18px;
+    border: 3px solid var(--coin);
+}
+
+.bacaan{
+    width: 54px;
+    height: 54px;
+    border-radius: 10px;
+    background-color: var(--salmon);
+    border: 4px solid white;
+    box-shadow: 0px 3px 3px 0px #3f40475c;
+    cursor: pointer;
+}
+
+.bacaan:hover{
+    transform: scale(1.08);
+    transition: .2s;
+}
+
+.level{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    padding-bottom: 10px;
+    gap: 0;
+}
+
+.lvl{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.lvl img{
+    transition: .3s;
+}
+
+.lvl img:hover{
+    transform: scale(1.25);
+}
+
+.empatlima{
+    margin: 0 16%;
+}
+
+.carousel-container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #000; /* Optional: Add border for styling */
+    margin-top: 20px; /* Add some spacing from the "Badges" text */
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 20px;
+    min-width: 100%;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+nav li:hover{
+    background-color: var(--vanishedcrepe);
+    transition: .2s;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+.xp img{
+    width: 20px;
+    margin: 14px;
+}
+
+.xp{
+    display: flex;  
+    align-items: center; 
+}
+
+#progress-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: var(--coin);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 8px 0;
+}
+
+#bar {
+    height: 10px;
+    background-color: var(--honey);
+    border-radius: 10px;
+}
+
+.duapulu{
+    width: 70%;
+}
+.seratus{
+    width: 20%;
+}
+.waratus{
+    width: 40%;
+}
+
+.points{
+    width: 100%;
+}
+
+.paneltitle h3{
+    color: var(--gunpowder);
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.paneltitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    text-align: left;
+    color: var(--gunpowder);
+    font-weight: 700;
+}
+
+.leaderboard-table th, .leaderboard-table td {
+    padding: 12px 15px;
+}
+
+.highlight{
+    background-color: var(--honey);
+    border: 4px solid var(--pollen);
+    color: white;
+}
+
+.badgesfooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.embla {
+    overflow: hidden;
+  }
+  
+  .embla__container {
+    display: flex;
+  }
+  
+  .embla__slide {
+    flex: 0 0 40%;
+    min-width: 0;
+  }
+ 
+  .embla__slide img {
+    width: 80px;
+    height: auto;
+  }
+
+footer{
+    height: 6px;
+}
+
+.embla__counter{
+    font-size: 15;
+    font-weight: 800;
+    color: var(--gunpowder);
+}
+
+.embla__button{
+    background-color: var(--redpanda);
+    color: white;
+    margin: 0;
+    padding: 6px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    height: fit-content;
+    width: 30px;
+}
